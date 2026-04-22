@@ -1,3 +1,4 @@
+CFLAGS = -Wno-int-conversion
 .PHONY: all
 all:
-	gcc -o code main.c buddy.c
+	gcc $(CFLAGS) -o code main.c buddy.c
